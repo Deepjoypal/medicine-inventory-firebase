@@ -10,3 +10,13 @@ table {
 td, th {
   width: 25%;
 }
+
+.low_quantity
+{
+  background-color: red;
+}
+
+.about_to_expire
+{
+  background-color: yellow;
+}

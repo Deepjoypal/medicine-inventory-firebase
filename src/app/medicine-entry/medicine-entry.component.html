@@ -1,0 +1,23 @@
+<div class="container col-md-6 justify-content-center align-items-center shadow-sm p-3 mb-5 bg-white rounded">
+<h2>New Medicine Entry</h2>
+<form #f="ngForm" (ngSubmit)="add(f.value)">
+  <div class="form-group">
+    <input ngModel #Name="ngModel" type="text" class="form-control" name="Name" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <input ngModel #Quantity="ngModel" type="text" class="form-control" name="Quantity" placeholder="Quantity">
+  </div>
+  <div class="form-group">
+    <input ngModel #Price="ngModel" type="text" class="form-control" name="Price" placeholder="Price">
+  </div>
+  <div class="form-group">
+    <input ngModel #ExpiryDate="ngModel" type="date" class="form-control" name="ExpiryDate" placeholder="Expiry Date">
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" name="Notes" ngModel #Notes="ngModel" placeholder="Add any notes"></textarea>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary pull-right" [disabled]="f.invalid" >Add</button>
+  </div>
+</form>
+</div>
